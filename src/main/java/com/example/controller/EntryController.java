@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.example.dto.ApiResponse;
 import com.example.entity.Entries;
 import com.example.service.EntryService;
@@ -31,7 +30,7 @@ public class EntryController {
 	 * @param category
 	 * @return ResponseEntity<List<Entries>>
 	 */
-	@GetMapping("/entities")
+	@GetMapping("/entries")
 	public ResponseEntity<?> fetchAllProducts(@RequestParam String category) {
 		ApiResponse fetchEntriesFromApI = entryService.fetchEntriesFromApI(category);
 		return new ResponseEntity<>(fetchEntriesFromApI, HttpStatus.OK);
@@ -43,7 +42,7 @@ public class EntryController {
 	 * @param entries
 	 * @return ResponseEntity<Entries>
 	 */
-	@PostMapping("/entities")
+	@PostMapping("/entries")
 	public ResponseEntity<?> saveEntry(@RequestBody Entries entries) {
 		entryService.saveEntries(entries);
 		return new ResponseEntity<>("Product Saved Successfully.", HttpStatus.CREATED);
