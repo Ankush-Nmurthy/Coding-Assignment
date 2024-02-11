@@ -5,7 +5,7 @@ Code is in Folder 'src/main/java/com/example'
 click here : https://docs.google.com/document/d/19rp-1Nb983rqYhx0dOMAky7XGY6RkkJ0QsV4WZ7DFMw/edit?usp=sharing
 
 ## .CSV pseudocode is written here
-click here: https://docs.google.com/document/d/19rp-1Nb983rqYhx0dOMAky7XGY6RkkJ0QsV4WZ7DFMw/edit?usp=sharing
+click here: https://github.com/Ankush-Nmurthy/Coding-Assignment/tree/main/csv
 
 ## Endpoints
 
